@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Hanken Grotesk';
+    
+
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+
+
+#topContent{
+    height:300px;
+    width:100vw;
+    background:linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    color: white;
+}
+
+#topContent p{
+    width:60%;
+    margin: auto;
+    margin-bottom:10px;
+}
+
+#topContent h4{
+    color: hsla(241, 100%, 89%,0.4);
+    margin:0;
+    margin-bottom:10px;
+    padding-top:5px;
+
+    
+}
+
+#circleResult{
+    width:140px;
+    height: 140px;
+    background:linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+#bigResult{
+    font-weight: bold;
+    font-size: 3rem;
+    display: inline-block;
+    position: absolute;
+    top:0px;
+    right:40px;
+}
+
+#smallResult{
+    color: hsla(241, 100%, 89%,0.5);
+    display: inline-block;
+    position: absolute;
+    top:90px;
+    right:26px;
+    
+}
+
+#belowContent{
+    width: 95%;
+    margin: auto;
+    
+
+}
+
+#belowTitle{
+    font-weight: bold;
+    color: hsl(224, 30%, 27%);
+}
+.resultBox{
+    
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    padding:3px;
+    
+}
+
+.resultBox img, .resultBox p{
+    display: inline-block;
+    
+    height: 100%;
+    vertical-align: middle;
+}
+
+#reaction{
+    color:hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 10%);
+
+}
+
+#memory{
+    color:hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.1);
+
+}
+
+#verbal{
+    color:hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.10);
+
+}
+
+#visual{
+    color: hsl(234, 85%, 45%);
+    background-color:hsl(234, 85%, 45%, 0.1);
+}
+
+
+.rate{
+ display: block;
+ float: right;
+ color:hsl(224, 30%, 27%);
+ margin-right:5%;
+  
+}
+
+button{
+    display: block;
+    background-color: hsl(224, 30%, 27%);
+    color:white;
+    border-radius: 30px;
+    width:90%;
+    margin:auto;
+    margin-top:30px;
+    border:none;
+    font-size: 1.3rem;
+    padding:15px;
+}
+
+button:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, hsl(252, 100%, 67%), hsl(241, 81%, 54%) );
+}
+
+@media (min-width: 600px){
+
+    #belowTitle{
+        margin-left:30px;
+    }
+
+    #circleResult{
+        margin-bottom:30px;
+        margin-top:15px;
+    }
+
+    #container{
+        position: relative;
+        margin:15px 50px;
+        box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+        border-radius: 30px;
+        height:460px;
+    }
+    
+    #topContent{
+        display: inline-block;
+        width:49%;
+        border-radius: 30px;
+        height:100%;
+        vertical-align: top;
+        
+    }
+
+    #belowContent{
+        
+        display:inline-block;
+        width:50%;
+        height:100%;
+
+    }
+}
